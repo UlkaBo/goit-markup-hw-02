@@ -34,8 +34,11 @@ body {
 }
 
 /* ----header---- */
+.link {
+  text-decoration: none;
+}
 .site-nav .link,
-.adsress .link {
+.address .link {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -43,12 +46,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav .link:hover,
-.site-nav .link:focus,
-.address .link:hover,
-.address .link:focus {
-  color: var(--accent-color);
+.address .link {
+  color: var(--primary-text-color);
 }
+
+.link:hover,
+.link:focus,
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -69,6 +72,20 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--alternative-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /*------end hero------*/
@@ -131,6 +148,38 @@ body {
   color: var(--alternative-color);
 }
 
+/*------styles for portfolio-------------*/
+
+.list-title {
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.list-description {
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.our-works-button {
+  background-color: var(--accent-bg-color);
+  color: var(--title-text-color);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+}
+.our-works-button:hover,
+.our-works-button:focus {
+  background-color: var(--accent-color);
+  color: var(--alternative-color);
+}
+/*------end styles for portfolio-------------*/
 /* цвет текста #757575
     цвет заголовков #212121
     синий цвет выделенных заголовков
